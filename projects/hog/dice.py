@@ -42,6 +42,7 @@ def make_test_dice(*outcomes):
     This function uses Python syntax/techniques not yet covered in this course.
     The best way to understand it is by reading the documentation and examples.
     """
+    # *outcome allows the function to generate specified dice recurrently
     assert len(outcomes) > 0, 'You must supply outcomes to make_test_dice'
     for o in outcomes:
         assert type(o) == int and o >= 1, 'Outcome is not a positive integer'
